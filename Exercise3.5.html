@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table { /* ตกแต่ง tag table*/ 
+            width:10%; /*ความกว้างของตาราง 10% */
+            text-align : left; /*จัดให้ข้อความ อยู่ชิดซ้าย*/
+            border: 1px solid #000000; /* จะใส่ขอบของตารางเชั้นข้างนอก */
+        } 
+        
+        /* ต่อไปหนูจะตกแต่งในส่วนของแท็ก td th ซึ่งจะอ้างอิงถึง cell data และ หัวตาราง */
+        td , th {
+            border: 1px solid #000000; /* ใส่ขอบของตารางชั้นข้างใน  */
+            padding: 8px; /*เพิ่มระยะห่างข้างใน cell ให้ห่างจาก border*/
+        }
+
+        th { 
+            background-color: rgb(0, 0, 0); /* เปลี่ยนสีพื้นหลังของส่วนหัวของตารางเป็นสีดำ*/
+            color: #ffffff; /*เปลี่ยนสีตัวอักษรข้างในส่วนหัวของตารางเป็นสีขาว*/
+        }
+
+    </style>
+</head>
+<body>
+        <h2>HTML table</h2>
+    <table>
+        <tr> <!-- tag tr เป็นแถวแนวนอน -->
+            <th>ID</th> <!-- แถวแนวนอนแรก จะมี tag th เป็นส่วนหัวของตาราง-->
+            <th>Name</th>
+            <th>Age</th> 
+        </tr>
+        <tr>
+            <td>1</td> <!-- แถวต่อไปๆ จะใช้ tag td เป็นการสร้างแถวข้อมูลปกติ-->
+            <td>Peter</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Lisa</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Tony</td>
+            <td>18</td>
+        </tr>
+    </table>
+
+</body>
+</html> 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            width: 400px;
+            border: 1px solid #002D9C;
+            border-radius: 10px 0px 0px 10px ;
+            overflow: hidden;
+          }
+          
+        .left-section {
+            background-color: #002D9C;
+            color: white;
+            padding: 25px;
+        }
+        
+        .right-section {
+            padding: 20px;
+            background-color: white;
+        }
+
+        input {
+            margin-bottom: 8px;
+        }
+        
+        button {
+            border-radius: 5px;
+            height: 30px;
+        }
+
+        #regis {
+            background-color: #189f00;
+            color: white;
+        }
+
+        #reset {
+            background-color: #f82525;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left-section">
+            <h3>Registration</h3>
+            <p>User type</p>
+            
+            <div class="radio-buttons">
+                <label><input type="radio" name="radio"> Admin </label><br>
+                <label><input type="radio" name="radio"> User </label>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <label> Username </label>
+            <input id="username"> <br>
+    
+            <label> Password </label>
+            <input id="password"> <br>
+    
+            <label> Re-enter Password </label>
+            <input id="repassword"> <br>
+    
+            <button id="regis">Register</button>
+            <button id="reset">Reset</button>
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
